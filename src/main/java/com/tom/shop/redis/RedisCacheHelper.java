@@ -2,7 +2,6 @@ package com.tom.shop.redis;
 
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.stereotype.Component;
 
 import java.util.Collections;
 import java.util.List;
@@ -38,10 +37,10 @@ public class RedisCacheHelper {
         if (rawValues == null || rawValues.isEmpty()) {
             return Collections.emptyList();
         }
-    return rawValues.stream()
-        .filter(Objects::nonNull)
-        .map(value -> (T) value)
-        .collect(Collectors.toList());
+        return rawValues.stream()
+                .filter(Objects::nonNull)
+                .map(value -> (T) value)
+                .collect(Collectors.toList());
     }
 
     /**

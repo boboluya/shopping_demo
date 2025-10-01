@@ -16,15 +16,6 @@ spring:
       host: 127.0.0.1
       port: 6379
       password: DLdc@2025
-mybatis-plus:
-  configuration:
-    map-underscore-to-camel-case: true
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  global-config:
-    db-config:
-      id-type: auto
-      logic-delete-value: 1
-      logic-not-delete-value: 0
 server:
   port: 8018
 seckill:

@@ -2,16 +2,14 @@ package com.tom.shop.controller;
 
 import com.tom.shop.service.RedisService;
 import jakarta.annotation.Resource;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-@RestController("/test")
+@RestController
+@RequestMapping("/test")
 public class UserController {
 
     @Resource

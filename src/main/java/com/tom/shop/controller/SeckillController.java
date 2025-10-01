@@ -3,6 +3,9 @@ package com.tom.shop.controller;
 import com.tom.shop.dto.SeckillResult;
 import com.tom.shop.model.SeckillProduct;
 import com.tom.shop.service.SeckillService;
+
+import jakarta.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +16,7 @@ import java.util.List;
 @RequestMapping("/shop/item")
 public class SeckillController {
 
-    @Autowired
+    @Resource
     private SeckillService seckillService;
 
     /**

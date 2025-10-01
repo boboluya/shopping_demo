@@ -27,3 +27,7 @@ mybatis-plus:
       logic-not-delete-value: 0
 server:
   port: 8018
+seckill:
+  sync-delay-ms: 5000
+  sync-batch-size: 200
+  cache-refresh-ms: 60000
